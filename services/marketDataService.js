@@ -185,7 +185,7 @@ export async function getMarketData(tokenConfig) {
                 pairName: `${targetTokenSymbol}/${config.baseCurrencySymbol}`,
                 baseToken: { address: targetTokenAddress, symbol: targetTokenSymbol },
                 quoteToken: { address: config.quoteTokenMap.WBNB, symbol: WBNB }, // Default to WBNB for consistency
-                currentPrice: currentPrice,
+                currentPrice: tokenPriceUsd,
                 currentVolume: currentVolume,
                 currentLiquidity: currentLiquidity,
                 historicalPrices: historicalPrices,
